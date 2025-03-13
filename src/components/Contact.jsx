@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { IoIosSend } from "react-icons/io";
 import { TbMailFilled } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-    const [state, handleSubmit] = useForm("xblryqrr");
+    const [state, handleSubmit] = useForm("xoveqorz");
     const [isVisible, setIsVisible] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -20,7 +19,7 @@ const Contact = () => {
             const timer = setTimeout(() => {
                 setIsVisible(false);
             }, 3000);
-
+            console.log(formData)
             setFormData({ name: '', email: '', message: '' });
             setErrorMessage('');
 
