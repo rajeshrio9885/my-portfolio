@@ -65,6 +65,34 @@ const QualificationTimeline = () => {
                                             exit={{ opacity: 0, y: -100 }}
                                         >
                                             <div className="bg-gray-100 p-4 rounded-lg shadow-md w-full">
+                                                <h3 className="md:text-xl text-md font-medium">Java Full Stack Development</h3>
+                                                <p className="text-gray-600 md:text-md text-sm">Besant Technologies - Anna nagar</p>
+                                                <span className="text-sm text-gray-500">2025</span>
+                                            </div>
+
+                                        </motion.div>
+                                    </DialogTrigger>
+                                    <DialogContent className="sm:max-w-[700px] p-5">
+                                        <div className="w-full">
+                                            <img src="https://res.cloudinary.com/dfa5j3hbx/image/upload/v1733718325/certificate_dk3xi6.jpg" />
+                                        </div>
+                                    </DialogContent>
+                                </Dialog>
+                            </div>
+
+                            <div className="flex items-start space-x-2 mb-10">
+                                <Dialog>
+                                    <DialogTrigger asChild>
+                                        <motion.div
+                                            className="box w-full hover:cursor-pointer"
+                                            whileHover={{ scale: 1.05 }}
+                                            whileTap={{ scale: 0.9 }}
+                                            transition={{ type: "tween", stiffness: 400, damping: 10, duration: 0.5 }}
+                                            initial={{ opacity: 0, y: 100 }}
+                                            animate={inView ? { opacity: 1, y: 0 } : {}} // Animates only when in view
+                                            exit={{ opacity: 0, y: -100 }}
+                                        >
+                                            <div className="bg-gray-100 p-4 rounded-lg shadow-md w-full">
                                                 <h3 className="md:text-xl text-md font-medium">MERN Full Stack Development</h3>
                                                 <p className="text-gray-600 md:text-md text-sm">Udemy - Dr.Angela Yu </p>
                                                 <span className="text-sm text-gray-500">2024</span>

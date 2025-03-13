@@ -1,8 +1,4 @@
-// import React from 'react';
-// import HeroImg from '../assets/hero.png';
-// import Hero2Img from '../assets/hero2.png';
 import Hero3Img from '../assets/hero3.png';
-// import bgImg from '../assets/bg.gif';
 import { AiOutlineGithub, AiOutlineMedium } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { TbMessage } from "react-icons/tb";
@@ -24,11 +20,6 @@ const Hero = () => {
         <>
             <section
                 className='px-10 md:py-40 py-20 bg-secondary opacity-95'
-                // style={{
-                //     backgroundImage: `url(${bgImg})`,
-                //     backgroundSize: "cover",
-                //     backgroundRepeat: "no-repeat",
-                // }}
                 id='hero' ref={ref}
             >
                 <div className='flex flex-col md:flex-row md:mt-1 mt-16 justify-center container mx-auto'>
@@ -89,7 +80,7 @@ const Hero = () => {
                                     exit={{ opacity: 0, y: -100 }}
                                     transition={{ type: "tween", stiffness: 400, damping: 10, duration: 0.5 }}
                                 >
-                                    <a href='https://www.linkedin.com/in/duraimurugan16/' target="_blank" className='btn-icons'><FaLinkedin size={25} /></a>
+                                    <a href='https://www.linkedin.com/in/rajesh13698' target="_blank" className='btn-icons'><FaLinkedin size={25} /></a>
                                 </motion.div>
                                 <motion.div
                                     ref={ref}
@@ -98,7 +89,7 @@ const Hero = () => {
                                     exit={{ opacity: 0, y: -100 }}
                                     transition={{ type: "tween", stiffness: 400, damping: 10, duration: 0.5, delay: 0.2 }}
                                 >
-                                    <a href='https://github.com/hduraimurugan' target="_blank" className='btn-icons'><AiOutlineGithub size={25} /></a>
+                                    <a href='https://github.com/rajeshrio9885' target="_blank" className='btn-icons'><AiOutlineGithub size={25} /></a>
                                 </motion.div>
                                 <motion.div
                                     ref={ref}
