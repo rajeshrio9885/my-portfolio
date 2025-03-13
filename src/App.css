@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+.animate-typing {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    width: 0;
+    animation:
+        typing 3.5s steps(40, end) forwards,
+        blink-caret .75s step-end infinite;
+} */
+
+.App {
+  background-attachment: fixed;
+  background-size: cover; /* Ensures the background covers the entire element */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Ensures that all cards stretch to the same height */
+  }
+  
+  .card {
+    flex: 1 1 30%; /* Adjust the width of the card, e.g., 30% */
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px; /* Adjust to your desired minimum height */
+  }
+
+  /* .img-prj {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  } */
+  
+  .card-content {
+    flex-grow: 1;
+  }
+
+
+
+@layer base {
+    .font-outline-1 {
+      -webkit-text-stroke: 1px white;
+    }
+  :root {
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 10% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+    }
+  .dark {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+/* .hero-blend {
+    background-image: url('./assets/bg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply; 
+} */
+
+.magicpattern {
+    width: 77%;
+    height: 90%;
+    background-size: cover; /* Ensures the background covers the area */
+    background-position: center center;
+    background-repeat: no-repeat; /* Avoid repeating the pattern on small screens */
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2300a896%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%2300665e%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M809 629q-51 129-180 158.5t-288 30Q182 818 142 659t46-272q86-113 199-180t260.5-34.5q147.5 32.5 180 180T809 629Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M809 629q-51 129-180 158.5t-288 30Q182 818 142 659t46-272q86-113 199-180t260.5-34.5q147.5 32.5 180 180T809 629Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1400px) {
+    .magicpattern {
+        width: 90%;
+        height: 80%;
+      background-size: cover; /* Adjust size on smaller screens */
+      background-position: center center;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .magicpattern {
+        width: 96%;
+        height: 61%;
+      background-size: 100%; /* Adjust size on smaller screens */
+      background-position: end end;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .magicpattern {
+        width: 100%;
+        height: 43%;
+      background-size: 77%; /* Adjust size on smaller screens */
+      background-position: center center;
+    }
+  }
+
+/* For smaller screens (up to 768px) */
+@media (max-width: 768px) {
+  .magicpattern {
+    background-size: 60%; /* Adjust size on smaller screens */
+    background-position: center center;
+  }
+}
+
+/* For extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .magicpattern {
+    width: 100%;
+    height: 60%;
+    background-size: contain; /* Ensure the pattern fits within the container */
+    background-repeat: no-repeat;
+    background-position: center center; /* Adjust positioning for small devices */
+  }
+}
+
+  
+  
+header ul li {
+    @apply px-3 ;
+}
+
+.active{
+    @apply py-1 border-b-2 border-secondary;
+}
+
+/* .bg-primary{
+    @apply bg-gradient-to-r from-blue-900 to-indigo-950;
+}
+
+.bg-secondary{
+    @apply bg-gradient-to-r from-blue-900 to-gray-900;      
+} */
+
+.bg-primary{
+  @apply bg-gradient-to-r from-black to-gray-900;
+}
+
+.bg-secondary{
+  @apply bg-gradient-to-r from-black to-gray-900;
+}
+
+
+.card-hoverr-eff{
+    @apply  hover:cursor-pointer;
+}
+
+.mobile-nav{
+    @apply fixed top-20 left-0 bg-gray-900 w-full ;
+}
+
+.mobile-nav a{
+    @apply w-full h-auto flex items-center gap-2 justify-start pl-16 bg-slate-950 hover:bg-gray-800 py-5;
+    
+}
+
+.project-desc{
+    @apply absolute md:h-[200px] h-[160px] top-0 left-0 right-0 bottom-0 bg-primary opacity-0 hover:opacity-90 cursor-pointer transition duration-200;
+}
+
+.button-link{
+    /* @apply bg-gray-200 text-gray-900 font-bold font-list-font px-3 py-2 rounded-md hover:scale-105; */
+    @apply text-gray-900 font-semibold bg-gradient-to-r from-teal-400 to-teal-700 hover:from-teal-600 hover:to-teal-400 hover:text-white transition-colors ease-linear duration-200 px-3 py-2  rounded-md drop-shadow-md;
+
+}
+
+.btn-prj{
+    /* @apply bg-gray-200 text-gray-900 font-bold font-list-font px-3 py-2 rounded-md hover:scale-105; */
+    @apply text-gray-900 font-semibold bg-gradient-to-r 
+    from-teal-400 to-teal-600 hover:from-teal-700 hover:to-teal-400
+     hover:text-white transition-colors ease-linear duration-200 px-5 py-2  rounded-xl drop-shadow-md;
+
+}
+
+
+.btn-dark{
+    /* @apply  text-white bg-gray-700 px-3 py-3 rounded-md hover:scale-105 drop-shadow-md; */
+    @apply text-white bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 transition-colors ease-linear duration-200 px-3 py-3 rounded-md drop-shadow-md;
+}
+
+/* .txt-gradient{
+    @apply bg-gradient-to-r from-violet-900 font-bold to-violet-500  text-transparent bg-clip-text;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg-border-prj{
+  /* @apply bg-gray-200 text-gray-900 font-bold font-list-font px-3 py-2 rounded-md hover:scale-105; */
+  @apply text-gray-900 bg-gradient-to-r from-gray-800 to-slate-700 
+         hover:from-slate-800 hover:to-teal-900 hover:cursor-pointer p-2 
+         rounded-lg drop-shadow-2xl shadow-lg hover:shadow-2xl ;
+}
+
+
+.btn-icons{
+    @apply hover:text-teal-500 transition-colors ease-linear drop-shadow-md 
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}
+
+.fixed-shapes {
+  position: fixed;
+  pointer-events: none; /* Makes sure the shapes don't interfere with clicks */
+  z-index: 999; /* Ensures they are above other content */
+}
+
+
+
