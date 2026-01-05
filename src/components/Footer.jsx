@@ -38,7 +38,7 @@ const Footer = () => {
 
               <div className='flex flex-row text-gray-100 gap-7 drop-shadow-md px-16 items-center justify-center'>
                 <a href='mailto:nirmalvicky62@gmail.com' target="_blank" className='btn-icons'><BiLogoGmail size={25} /></a>
-                <a href='https://www.linkedin.com/in/rajesh13698' target="_blank" className='btn-icons'><FaLinkedin size={25} /></a>
+                <a href='https://www.linkedin.com/in/rajesh-j-5137702bb/' target="_blank" className='btn-icons'><FaLinkedin size={25} /></a>
                 <a href='https://wa.me/qr/7V7UWBHCXXU6O1' target="_blank" className='btn-icons'><IoLogoWhatsapp size={25} /></a>
               </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
 
           <div className='text-gray-400 font-list-font text-center flex justify-center items-center'>
-            <a href="https://github.com/hduraimurugan" target="_blank" className="hover:text-gray-200">&copy;Rajesh Portfolio</a> <span>. 2025</span>
+            <a href="https://github.com/rajeshrio9885" target="_blank" className="hover:text-gray-200">&copy;Rajesh Portfolio</a> <span>. 2025</span>
             </div>
         </div>
       </section>
