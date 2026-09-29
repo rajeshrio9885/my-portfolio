@@ -219,7 +219,7 @@ const Hero = () => {
                   >
                     <a
                       className="btn-prj font-list-font text-md py-3 px-5 rounded-full flex gap-1 items-center"
-                      href="https://drive.google.com/file/d/11yRow8ufI1vnwV5gICdY_gJULenZtBoH/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1b_UURlqvkGHGGIPE0_4qQb-tfrYsrGhf/view?usp=sharing"
                       target="_blank"
                     >
                       Resume <IoMdCloudDownload size={25} />
